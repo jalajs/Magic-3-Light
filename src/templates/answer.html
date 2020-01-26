@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Answer!</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+
+</head>
+<body>
+<div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+    <div class="card" style="align-self: center">
+        <div class="card-header">
+            <div class="card-title h5">{{ question }}</div>
+            <div class="card-subtitle text-gray">And the answer is...</div>
+        </div>
+        <div class="card-body" style="font-size: 200%; text-align: center">
+            {{ answer }}!
+        </div>
+        <div class="card-footer">
+            <a href="{{ url_for('index') }}" class="btn btn-link">Spin Again!</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

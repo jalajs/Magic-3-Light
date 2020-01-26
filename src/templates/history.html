@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spin History</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+
+</head>
+<body>
+<header class="navbar menu" style="display:flex; flex-direction: row; justify-content: center;">
+    <section class="navbar-center">
+        <img src="/static/Logo.png">
+        <a href="{{ url_for('index') }}" class="btn btn-link" style="font-size: 200%; color: orange">Spin</a>
+        <a href="{{ url_for('history') }}" class="btn btn-link" style="font-size: 200%; color: orange"><b>History</b></a>
+    </section>
+</header>
+<div class="content" style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th>Answer</th>
+            <th>Time</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for ques in questions %}
+            <tr>
+                <td>{{ ques.id }}</td>
+                <td>{{ ques.question }}</td>
+                <td>{{  ques.response }}</td>
+                <td>{{ ques.time }}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    </div>
+</div>
+</body>
+</html>

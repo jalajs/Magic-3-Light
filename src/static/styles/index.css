@@ -1,0 +1,39 @@
+body {
+    background-color: green;
+}
+
+.title {
+    width: 100%;
+    border-bottom: 1px mediumpurple ridge;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuButton {
+    flex: 3;
+    color: #11557C;
+}
+
+.normalLink {
+    text-decoration: none;
+    color: #11557C;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+.big-button {
+    width: 100%;
+    background-color: #ffa340;
+    border-radius: 20%;
+    border: 1px solid gainsboro;
+    box-shadow: #555555;
+}

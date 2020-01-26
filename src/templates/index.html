@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Spinner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+</head>
+<body>
+<header class="navbar menu" style="display:flex; flex-direction: row; justify-content: center;">
+    <section class="navbar-center">
+        <img src="/static/Logo.png">
+        <a href="{{ url_for('index') }}" class="btn btn-link" style="font-size: 200%; color: orange"><b>Spin</b></a>
+        <a href="{{ url_for('history') }}" class="btn btn-link" style="font-size: 200%; color: orange">History</a>
+    </section>
+</header>
+<div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+
+    <div class="empty">
+        <p class="empty-title h5">Take a spin to decide your fate!</p>
+        <p class="empty-subtitle">Enter your question below</p>
+        <div class="empty-action">
+            <form action="/ask" class="form-group" method="post">
+                <label class="form-label" for="questionInput">Question:</label>
+                <input type="text" name="questionInput" id="questionInput" placeholder="Make it a good one..."
+                       class="form-input">
+                <input type="submit" value="Spin!" class="btn btn-primary" style="margin-top: 20px;">
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
