@@ -1,4 +1,5 @@
 # Hack@Brown 2020 Project
+![](IMG_1151.jpg)
 ## Inspiration
 We entered this hackathon with the goal of working on a project using only technology that both of us were completely new to or had limited experience with. After attending the various workshops throughout the day and exploring the hardware room, we decided we wanted to build something that would require both a Particle Argon and a web app using Flask and a SQL database.
 
